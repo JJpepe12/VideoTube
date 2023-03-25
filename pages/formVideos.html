@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/formVideos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="header">
+      <nav class="header__nav">
+        <figure class="header__figure">
+          <img
+            src="../assets/VideoTube.png"
+            alt="Logo VideoTube"
+          />
+        </figure>
+        <h1>VideoTube</h1>
+        <form class="search-bar">
+          <input type="text" placeholder="Buscar video" name="" id="" />
+          <div class="actions">
+            <button type="submit">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="main__botones">
+        <button name="all">Todos</button>
+        <button name="music">Música</button>
+        <button name="coding">Programación</button>
+        <button name="anthropology">Antropología</button>
+      </div>
+      <form id="form">
+            <label for="name">Nombre</label>
+            <input id="name" type="text" placeholder="Ingrese el autor del video">
+            <label for="image">Video</label>
+            <input type="text" id="image" placeholder="Ingrese la Imagen del personaje">
+            <label for="category">Categoría</label>
+            <select id="category">
+                <option value="">Seleccione un opción</option>
+                <option value="Film">Música</option>
+                <option value="Tv Series">Programación</option>
+                <option value="Tv Series">Antropología</option>
+            </select>
+            <label for="title">Título del <video src=""></video></label>
+            <input type="text" id="title" placeholder="Ingrese el nombre del programa">
+            <label for="year">Año del video</label>
+            <input type="number" id="year" placeholder="Ingrese el año del programa">
+            <label for="duration">Duración del video</label>
+            <input type="number" id="duration" placeholder="Ingrese duración en minutos">
+            <button type="submit">Añadir video</button>
+      </form>
+    </main>
+    <script src="../scripts/formVideos.js" type="module"></script>
+</body>
+</html>
